@@ -1,0 +1,49 @@
+﻿{
+  "RibbonPanel": {
+    "HelloWorldPanel": {
+      "Name": "Hello World",
+      "HelloWorldName": "Hello\nWorld",
+      "HelloWorldInstruction": "Hello World"
+    }
+  },
+  "ToolForm": {
+    "HelloWorldForm": {
+      "Name": "Hello World",
+      "CommandButton": "Hello World"
+    }
+  },
+  "RevitCommandErrorCode": {
+    "SELECT_FLOOR_BEFORE_RUN": "Chọn sàn trước khi chạy.",
+    "SELECT_REBAR_BEFORE_RUN": "Chọn thép trước khi chạy.",
+    "SELECT_FRAME_BEFORE_RUN": "Chọn dầm trước khi chạy.",
+    "SELECT_CAD_DRAWING_BEFORE_RUN": "Chọn bản vẽ Cad trước khi chạy.",
+    "SELECT_ELEMENTS_BEFORE_RUN": "Chọn đối tượng trước khi chạy.",
+    "SELECT_VIEW_BEFORE_RUN": "Chọn view trước khi chạy.",
+    "SELECT_STRUCTURAL_COLUMN_BEFORE_RUN": "Chọn cột kết cấu trước khi chạy.",
+
+    "ONLY_WORK_IN_2D": "Chỉ hoạt động ở view 2D",
+    "ONLY_WORK_IN_3D": "Chỉ hoạt động ở view 3D",
+    "ONLY_WORK_WITH_STRAIGHT_FRAME": "Chỉ hoạt động với dầm thẳng.",
+    "ONLY_WORK_WITH_STRAIGHT_COLUMN": "Chỉ hoạt động với cột thẳng.",
+
+    "INVALID_DATA": "Dữ liệu không hợp lệ.",
+    "INVALID_REF_LOCATION": "Tọa độ gốc không hợp lệ.",
+    "INVALID_LOCATION": "Tọa độ không hợp lệ.",
+    "INVALID_PARAMETER": "Parameter không hợp lệ.",
+    "INVALID_ROOM": "Phòng không hợp lệ.",
+    "INVALID_FLOOR_TYPE": "Loại phòng không hợp lệ.",
+    "INVALID_WALL_HEIGHT": "Chiều cao tường không hợp lệ.",
+    "INVALID_LINE_STYLE": "Loại nét không hợp lệ.",
+    "INVALID_RULE": "Nguyên tắc không hợp lệ.",
+    "INVALID_CATEGORY": "Category không hợp lệ.",
+
+    "DONT_HAVE_ANY_ELEMENTS": "Không có đối tượng nào.",
+    "DONT_HAVE_ANY_SCHEDULE": "Không có schedule nào.",
+    "DONT_HAVE_ANY_TITLE_BLOCK": "Không có title block nào.",
+    "DONT_HAVE_ANY_WARNING": "Không có warning nào.",
+    "DONT_HAVE_ANY_VIEW_SHEET": "Không có view sheet nào.",
+
+    "INVALID_LICENSE": "Không có bản quyền.",
+    "EXPIRED_LICENSE": "Bản quyền hết hạn."
+  }
+}

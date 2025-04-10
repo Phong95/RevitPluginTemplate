@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FBBF5E3-561A-4BEA-9777-1EA9365B0D3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RevitPlugin</RootNamespace>
+    <AssemblyName>RevitPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2020|AnyCPU'">
+    <AssemblyName>RevitPlugin2020</AssemblyName>
+    <OutputPath>bin\2020\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG;REVIT2020</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2021|AnyCPU'">
+    <AssemblyName>RevitPlugin2021</AssemblyName>
+    <OutputPath>bin\2021\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG;REVIT2021</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2022|AnyCPU'">
+    <AssemblyName>RevitPlugin2022</AssemblyName>
+    <OutputPath>bin\2022\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG;REVIT2022</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2023|AnyCPU'">
+    <AssemblyName>RevitPlugin2023</AssemblyName>
+    <OutputPath>bin\2023\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG;REVIT2023</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2024|AnyCPU'">
+    <AssemblyName>RevitPlugin2024</AssemblyName>
+    <OutputPath>bin\2024\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG;REVIT2024</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2025|AnyCPU'">
+    <OutputPath>bin\2025\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=2.1.4.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.2.1.4\lib\net462\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.9.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.4.9.0\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.39\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="AdWindows" Condition="'$(Configuration)' == '2020'">
+      <HintPath>..\RevitAPIVersions\2020\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == '2020'">
+      <HintPath>..\RevitAPIVersions\2020\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == '2020'">
+      <HintPath>..\RevitAPIVersions\2020\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UIFramework" Condition="'$(Configuration)' == '2020'">
+      <HintPath>..\RevitAPIVersions\2020\UIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="AdWindows" Condition="'$(Configuration)' == '2021'">
+      <HintPath>..\RevitAPIVersions\2021\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == '2021'">
+      <HintPath>..\RevitAPIVersions\2021\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == '2021'">
+      <HintPath>..\RevitAPIVersions\2021\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UIFramework" Condition="'$(Configuration)' == '2021'">
+      <HintPath>..\RevitAPIVersions\2021\UIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="AdWindows" Condition="'$(Configuration)' == '2022'">
+      <HintPath>..\RevitAPIVersions\2022\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == '2022'">
+      <HintPath>..\RevitAPIVersions\2022\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == '2022'">
+      <HintPath>..\RevitAPIVersions\2022\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UIFramework" Condition="'$(Configuration)' == '2022'">
+      <HintPath>..\RevitAPIVersions\2022\UIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="AdWindows" Condition="'$(Configuration)' == '2023'">
+      <HintPath>..\RevitAPIVersions\2023\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == '2023'">
+      <HintPath>..\RevitAPIVersions\2023\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == '2023'">
+      <HintPath>..\RevitAPIVersions\2023\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UIFramework" Condition="'$(Configuration)' == '2023'">
+      <HintPath>..\RevitAPIVersions\2023\UIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="AdWindows" Condition="'$(Configuration)' == '2024'">
+      <HintPath>..\RevitAPIVersions\2024\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == '2024'">
+      <HintPath>..\RevitAPIVersions\2024\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == '2024'">
+      <HintPath>..\RevitAPIVersions\2024\RevitAPIUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UIFramework" Condition="'$(Configuration)' == '2024'">
+      <HintPath>..\RevitAPIVersions\2024\UIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Extensions\ArrayExtensions.cs" />
+    <Compile Include="Extensions\BitmapExtensions.cs" />
+    <Compile Include="Extensions\CanvasObjectExtensions.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\CoordinateExtensions.cs" />
+    <Compile Include="Extensions\ExceptionExtensions.cs" />
+    <Compile Include="Extensions\RevitElementExtensions.cs" />
+    <Compile Include="Helper\AssemblyLoader\AssemblyLoader.cs" />
+    <Compile Include="Helper\File\FileWrite.cs" />
+    <Compile Include="Helper\ImageToSourceConverter\ImageToSourceConverter.cs" />
+    <Compile Include="Helper\LastImageConverter\LastImageConverter.cs" />
+    <Compile Include="Helper\RevitUtils\CameraUtils.cs" />
+    <Compile Include="Helper\RevitUtils\MaterialUtils.cs" />
+    <Compile Include="Helper\TimeZone\TimeZone.cs" />
+    <Compile Include="Models\Language\LanguageModel.cs" />
+    <Compile Include="Models\Language\Panel\Panels\HelloWorld.cs" />
+    <Compile Include="Models\Language\Panel\RibbonPanelModel.cs" />
+    <Compile Include="Models\Language\RevitCommandErrorCode\RevitCommandErrorCode.cs" />
+    <Compile Include="Models\Language\Tool Form\Forms\HelloWorldFormModel.cs" />
+    <Compile Include="Models\Language\Tool Form\ToolFormModel.cs" />
+    <Compile Include="Models\RevitCamera\RevitCameraModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\HelloWorld\HelloWorld.cs" />
+    <Compile Include="Tools\RequestHandler.cs" />
+    <None Include="app.config" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\RevitBaseCommandExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Helper\RevitUtils\BoundingBoxBaseUtils.cs" />
+    <Compile Include="Helper\RevitUtils\ElementColorBaseUtils.cs" />
+    <Compile Include="Helper\RevitUtils\GeometryBaseUtils.cs" />
+    <Compile Include="Helper\RevitUtils\GetElementBaseUtils.cs" />
+    <Compile Include="Helper\RevitUtils\ModelLineBaseUtils.cs" />
+    <Compile Include="Helper\RevitUtils\RevitFamilyBaseUtils.cs" />
+    <Compile Include="Helper\RevitUtils\RevitParameterBaseUtils.cs" />
+    <Compile Include="Helper\RevitUtils\RibbonUtils.cs" />
+    <Compile Include="Helper\RevitUtils\SchemaBaseUtils.cs" />
+    <Compile Include="Helper\RevitUtils\UnitBaseUtils.cs" />
+    <Compile Include="Models\ModelessDialog\Request.cs" />
+    <Compile Include="Models\ModelessDialog\RequestId.cs" />
+    <Compile Include="Models\MVVM\BaseViewModel.cs" />
+    <Compile Include="Models\MVVM\EventArgs.cs" />
+    <Compile Include="Models\MVVM\EventRaiser.cs" />
+    <Compile Include="Models\MVVM\RelayCommand.cs" />
+    <Compile Include="Models\ProjectParameterData\ProjectParameterData.cs" />
+    <Compile Include="Models\RevitCommandErrorCode\RevitCommandErrorCode.cs" />
+    <Compile Include="Models\RevitCommand\IRevitBaseCommandResult.cs" />
+    <Compile Include="Models\RevitCommand\IRevitCommand.cs" />
+    <Compile Include="Models\RevitCommand\RevitBaseCommand.cs" />
+    <Compile Include="Models\RevitCommand\RevitBaseCommandResponseResult.cs" />
+    <Compile Include="Models\RevitCommand\RevitBaseCommandResult.cs" />
+    <Compile Include="Models\RevitCommand\RevitTransactionAttribute.cs" />
+    <Compile Include="Models\WarningSwallower\WarningSwallower.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Resources\en.json" />
+    <EmbeddedResource Include="Resources\vi.json" />
+    <None Include="RevitPlugin.addin" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>

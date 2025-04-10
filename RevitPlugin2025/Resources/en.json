@@ -1,0 +1,50 @@
+﻿{
+  "RibbonPanel": {
+    "HelloWorldPanel": {
+      "Name": "Hello World",
+      "HelloWorldName": "Hello\nWorld",
+      "HelloWorldInstruction": "Hello World"
+    }
+  },
+  "ToolForm": {
+    "HelloWorldForm": {
+      "Name": "Hello World",
+      "CommandButton": "Hello World"
+    }
+  },
+  "RevitCommandErrorCode": {
+    "SELECT_FLOOR_BEFORE_RUN": "Select floor before run.",
+    "SELECT_REBAR_BEFORE_RUN": "Select rebar before run.",
+    "SELECT_FRAME_BEFORE_RUN": "Select frame before run.",
+    "SELECT_CAD_DRAWING_BEFORE_RUN": "Select cad drawing before run.",
+    "SELECT_ELEMENTS_BEFORE_RUN": "Select elements before run.",
+    "SELECT_VIEW_BEFORE_RUN": "Select view before run.",
+    "SELECT_STRUCTURAL_COLUMN_BEFORE_RUN": "Select structural column before run.",
+
+    "ONLY_WORK_IN_2D": "Only works in 2D views.",
+    "ONLY_WORK_IN_3D": "Only works in 3D views.",
+    "ONLY_WORK_WITH_STRAIGHT_FRAME": "Only works with straight frame.",
+    "ONLY_WORK_WITH_STRAIGHT_COLUMN": "Only works with straight column.",
+
+    "INVALID_DATA": "Invalid data.",
+    "INVALID_REF_LOCATION": "Invalid ref location.",
+    "INVALID_LOCATION": "Invalid location.",
+    "INVALID_PARAMETER": "Invalid parameter.",
+    "INVALID_ROOM": "Invalid room.",
+    "INVALID_FLOOR_TYPE": "Invalid floor type.",
+    "INVALID_WALL_HEIGHT": "Invalid wall height.",
+    "INVALID_LINE_STYLE": "Invalid line style.",
+    "INVALID_RULE": "Invalid rule.",
+    "INVALID_CATEGORY": "Invalid category.",
+
+    "DONT_HAVE_ANY_ELEMENTS": "Dont have any elements.",
+    "DONT_HAVE_ANY_SCHEDULE": "Dont have any schedule.",
+    "DONT_HAVE_ANY_TITLE_BLOCK": "Dont have any title block.",
+    "DONT_HAVE_ANY_WARNING": "Dont have any warnings.",
+    "DONT_HAVE_ANY_VIEW_SHEET": "Dont have any view sheets.",
+
+    "INVALID_LICENSE": "Invalid license.",
+    "EXPIRED_LICENSE": "Your license expired."
+
+  }
+}

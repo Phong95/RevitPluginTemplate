@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>RevitPlugin</Name>
+		<Assembly>D:\Github\RevitPluginTemplate\RevitPlugin\bin\2020\RevitPlugin2020.dll</Assembly>
+		<ClientId>aaf1027f-bbc7-46fc-ade0-c4090282f899</ClientId>
+		<FullClassName>RevitPlugin.App</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+	</AddIn>
+</RevitAddIns>
